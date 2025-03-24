@@ -1,4 +1,4 @@
-CREATE OR ALTER DYNAMIC TABLE {{db}}.{{schema}}.product
+CREATE OR REPLACE DYNAMIC TABLE {{db}}.{{schema}}.product
   TARGET_LAG = '1 day'
   WAREHOUSE = {{dyn_wh}}
   REFRESH_MODE = auto
